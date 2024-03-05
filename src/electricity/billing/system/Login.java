@@ -1,7 +1,7 @@
 
 package electricity.billing.system;
 
-import javax.swing.*;
+import javax.swing.*; //java extension for swing package
 import java.awt.*;
 
 public class Login extends JFrame{
