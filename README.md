@@ -1,3 +1,3 @@
 # ElectricityBillingSystem-JAVA
 
-# Preview
+# Preview  of the project:
