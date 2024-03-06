@@ -1,11 +1,17 @@
 
 package electricity.billing.system;
-
+/**
+ *
+ * @author sougato
+ */
 import javax.swing.*; //java extension for swing package
 import java.awt.*;
+import java.awt.event.*;
 
-public class Login extends JFrame{
+public class Login extends JFrame implements ActionListener{
     
+    //Global Decalration of variavles
+    JButton login, cancel, signup;
     Login(){
         super("Login Page"); //to add a heading
         // super must always be the first statement to a constructor
@@ -49,25 +55,29 @@ public class Login extends JFrame{
         logginin.setBounds(400, 100, 150, 20);
         add(logginin);
         
+        //Buttons
         //Login Button with image
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icon/login.png"));
         Image i2=i1.getImage().getScaledInstance(16, 16, Image.SCALE_DEFAULT);
-        JButton login=new JButton("Login", new ImageIcon(i2));
+        login=new JButton("Login", new ImageIcon(i2));
         login.setBounds(330, 160, 100, 20);
+        login.addActionListener(this); //to check click event
         add(login);
         
         //Cancel Button with image
         ImageIcon i3=new ImageIcon(ClassLoader.getSystemResource("icon/cancel.jpg"));
         Image i4=i3.getImage().getScaledInstance(16, 16, Image.SCALE_DEFAULT);
-        JButton cancel=new JButton("Cancel", new ImageIcon(i4));
+        cancel=new JButton("Cancel", new ImageIcon(i4));
         cancel.setBounds(430, 160, 100, 20);
+        cancel.addActionListener(this);
         add(cancel);
         
         //Sign-up Button with image
         ImageIcon i5=new ImageIcon(ClassLoader.getSystemResource("icon/signup.png"));
         Image i6=i5.getImage().getScaledInstance(16, 16, Image.SCALE_DEFAULT);
-        JButton signup=new JButton("Sign-up", new ImageIcon(i6));
+        signup=new JButton("Sign-up", new ImageIcon(i6));
         signup.setBounds(380, 200, 100, 20);
+        signup.addActionListener(this);
         add(signup);
         
         //Image for this frame
@@ -81,6 +91,22 @@ public class Login extends JFrame{
         setSize(640,300);
         setLocation(400,200);
         setVisible(true);
+    }
+    
+    public void actionPerformed(ActionEvent ae){
+        //ActionEvent tells us the source of the action triggered
+        // we write the action for the buttons here
+        // we need to declare the buttons globally so that it can be used outside of the constructor
+        if(ae.getSource()==login){
+            
+        }else if(ae.getSource()==cancel){
+            //cancel button should close this frame
+            setVisible(false);
+        }else if(ae.getSource()==signup){
+            //should close this frame and open signup frame
+            setVisible(false);
+            new Signup();
+        }
     }
     
     public static void main(String[] args){

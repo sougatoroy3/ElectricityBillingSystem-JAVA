@@ -1,5 +1,8 @@
 package electricity.billing.system;
-
+/**
+ *
+ * @author sougato
+ */
 import javax.swing.*; //java extension for swing package
 import java.awt.*;
 
