@@ -4,14 +4,21 @@ package electricity.billing.system;
  *
  * @author sougato
  */
+
 import javax.swing.*; //java extension for swing package
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.*;
 
 public class Login extends JFrame implements ActionListener{
     
     //Global Decalration of variavles
-    JButton login, cancel, signup;
+    JButton log_in; 
+    JButton cancel;
+    JButton signup;
+    JTextField username;
+    JTextField password;
+    Choice logginin;
     Login(){
         super("Login Page"); //to add a heading
         // super must always be the first statement to a constructor
@@ -28,7 +35,7 @@ public class Login extends JFrame implements ActionListener{
         add(lblusername);
         
         // INPUT FIELD for username
-        JTextField username=new JTextField();
+        username=new JTextField();
         username.setBounds(400, 20, 150, 20);
         add(username);
         
@@ -38,7 +45,7 @@ public class Login extends JFrame implements ActionListener{
         add(lblpassword);
         
         // INPUT FIELD for password
-        JTextField password=new JTextField();
+        password=new JTextField();
         password.setBounds(400, 60, 150, 20);
         add(password);
         
@@ -49,7 +56,7 @@ public class Login extends JFrame implements ActionListener{
         
         // Create a drop down for login as componenet
         // we can use choice class(awt) or jcombobox(swing)
-        Choice logginin=new Choice();
+        logginin=new Choice();
         logginin.add("Admin");
         logginin.add("Customer");
         logginin.setBounds(400, 100, 150, 20);
@@ -59,10 +66,10 @@ public class Login extends JFrame implements ActionListener{
         //Login Button with image
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icon/login.png"));
         Image i2=i1.getImage().getScaledInstance(16, 16, Image.SCALE_DEFAULT);
-        login=new JButton("Login", new ImageIcon(i2));
-        login.setBounds(330, 160, 100, 20);
-        login.addActionListener(this); //to check click event
-        add(login);
+        log_in=new JButton("Login", new ImageIcon(i2));
+        log_in.setBounds(330, 160, 100, 20);
+        log_in.addActionListener(this); //to check click event
+        add(log_in);
         
         //Cancel Button with image
         ImageIcon i3=new ImageIcon(ClassLoader.getSystemResource("icon/cancel.jpg"));
@@ -97,8 +104,32 @@ public class Login extends JFrame implements ActionListener{
         //ActionEvent tells us the source of the action triggered
         // we write the action for the buttons here
         // we need to declare the buttons globally so that it can be used outside of the constructor
-        if(ae.getSource()==login){
+        if(ae.getSource()==log_in){
+            String susername=username.getText();
+            String spassword=password.getText();
+            String user=logginin.getSelectedItem();
             
+            try{
+                Conn c=new Conn();
+                String query="select * from login where username='"+susername+"' and password='"+spassword+"' and user='"+user+"'";
+                
+                //DDL command
+                ResultSet rs=c.s.executeQuery(query);
+                
+                if(rs.next()){
+                    String meter = rs.getString("meter_no");
+                    setVisible(false);
+                    new Project(user, meter);
+                }else{
+                    JOptionPane.showMessageDialog(null, "Invalid Login");
+                    //setting text fields empty in case of invalid details
+                    username.setText("");
+                    password.setText("");
+                }
+                
+            }catch(Exception e){
+                e.printStackTrace();
+            }
         }else if(ae.getSource()==cancel){
             //cancel button should close this frame
             setVisible(false);
