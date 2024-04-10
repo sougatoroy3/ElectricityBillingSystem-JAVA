@@ -1,7 +1,7 @@
 # ElectricityBillingSystem-JAVA
 <p align="center">
 <img src="https://img.shields.io/badge/Author-sougatoroy3-ff69b4.svg" />
-    <img src="https://img.shields.io/badge/JAVA.svg" />
+    <img src="https://img.shields.io/badge/JAVA-ff69b4.svg" />
     <img src="https://img.shields.io/github/repo-size/sougatoroy3/ElectricityBillingSystem-JAVA?color=orange">
     <img src="https://img.shields.io/github/stars/sougatoroy3/ElectricityBillingSystem-JAVA?style=social">
 </p>
