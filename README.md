@@ -3,6 +3,8 @@
 - [Features](#features)
 - [Requirements](#Requirements)
 - [License](#license)
+
+
 Introducing our Electricity Billing System app, a comprehensive solution meticulously crafted using Java, MySQL, and Swing/AWT frameworks. Designed with users’ convenience in mind, our application offers a seamless experience for managing the electricity billing process efficiently. 
 # Features:
   1.	This project aims to serve the Department of Electricity by computerizing the billing system.
