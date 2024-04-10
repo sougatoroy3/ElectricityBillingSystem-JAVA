@@ -10,6 +10,7 @@
 - [Features](#features)
 - [Requirements](#Requirements)
 - [Perspective](#perspective)
+- [Preview](#preview)
 - [License](#license)
 
 
@@ -46,7 +47,8 @@ Introducing our Electricity Billing System app, a comprehensive solution meticul
 
 Choose our app for its user-friendly interface, robust security, and customizable features. Experience seamless billing management and unlock new levels of efficiency for your organization with our Electricity Billing System.
 
-# Preview  of the project:
+# Preview
+
 
 # Requirements
   ## Software Requirements:
