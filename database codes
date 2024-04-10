@@ -21,3 +21,9 @@ create table tax(cost_per_unit varchar(20), meter_rent varchar(20), service_char
 insert into tax values('9','47','22','57','6','18');
 
 create table bill(meter_no varchar(20), month varchar(30), units varchar(20), totalbill varchar(20), status varchar(20));
+
+
+![Screenshot (167)](https://github.com/sougatoroy3/ElectricityBillingSystem-JAVA/assets/70825861/234bb8f8-bf96-4325-985d-079a32a71485)
+![Screenshot (166)](https://github.com/sougatoroy3/ElectricityBillingSystem-JAVA/assets/70825861/cf4cf8cd-286e-4030-a8cc-86347cd12d56)
+![Screenshot (165)](https://github.com/sougatoroy3/ElectricityBillingSystem-JAVA/assets/70825861/d79fead5-8d1c-4728-b75b-b89cf312d23c)
+![Screenshot (174)](https://github.com/sougatoroy3/ElectricityBillingSystem-JAVA/assets/70825861/b8d60c44-8898-4ae8-baa1-4baff655652c)
