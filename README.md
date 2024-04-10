@@ -28,7 +28,7 @@ Choose our app for its user-friendly interface, robust security, and customizabl
 
 # Preview  of the project:
 
-# Requirements for proposed work: 
+# Requirements for proposed work- 
   # Software Requirements:
     1.	Operating System: Windows 10, macOS, or Linux.
     2.	Java Development Kit (JDK) version 8 or later for development and execution of Java applications.
