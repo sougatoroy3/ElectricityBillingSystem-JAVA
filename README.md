@@ -2,7 +2,7 @@
 
 - [Features](#features)
 - [Requirements](#Requirements)
-- [User's Perspective](#user_perspective)
+- [Perspective](##perspective)
 - [License](#license)
 
 
@@ -12,15 +12,15 @@ Introducing our Electricity Billing System app, a comprehensive solution meticul
   2.	It mainly focuses on the calculation of units consumed during the specified time and the money to be charged by the electricity offices.
   3.	This computerized system will make the overall billing system easy, accessible, comfortable, and effective for consumers.
 
-
-# User Perspective:
+## Perspective
+# User's Perspective:
  	Difficulty in managing electricity billing data manually leads to inefficiency and errors.
   	The lack of a centralized system results in confusion and delays in processing invoices and payments.
  	Users struggle to track and manage customer accounts, leading to potential loss of revenue.
  	Inconsistent billing practices and inaccurate data cause frustration and distrust among customers.
   	Users face challenges in accessing and analyzing billing data for decision-making and reporting purposes.	
 	
- # Admin Perspective:
+ # Admin's Perspective:
   	Admins grapple with the complexity of managing vast amounts of billing data manually.
   	Lack of automation leads to time-consuming tasks and increases the risk of human errors.
   	Admins struggle to maintain consistency in billing practices across different regions or customer segments.
