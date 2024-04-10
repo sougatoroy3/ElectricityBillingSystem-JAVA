@@ -2,7 +2,7 @@
 
 - [Features](#features)
 - [Requirements](#Requirements)
-- [Perspective](##perspective)
+- [Perspective](#perspective)
 - [License](#license)
 
 
@@ -12,15 +12,15 @@ Introducing our Electricity Billing System app, a comprehensive solution meticul
   2.	It mainly focuses on the calculation of units consumed during the specified time and the money to be charged by the electricity offices.
   3.	This computerized system will make the overall billing system easy, accessible, comfortable, and effective for consumers.
 
-## Perspective
-# User's Perspective:
+# Perspective
+## User's Perspective:
  	Difficulty in managing electricity billing data manually leads to inefficiency and errors.
   	The lack of a centralized system results in confusion and delays in processing invoices and payments.
  	Users struggle to track and manage customer accounts, leading to potential loss of revenue.
  	Inconsistent billing practices and inaccurate data cause frustration and distrust among customers.
   	Users face challenges in accessing and analyzing billing data for decision-making and reporting purposes.	
 	
- # Admin's Perspective:
+## Admin's Perspective:
   	Admins grapple with the complexity of managing vast amounts of billing data manually.
   	Lack of automation leads to time-consuming tasks and increases the risk of human errors.
   	Admins struggle to maintain consistency in billing practices across different regions or customer segments.
@@ -30,7 +30,7 @@ Introducing our Electricity Billing System app, a comprehensive solution meticul
  Overall, the absence of an efficient Electricity Billing System poses significant challenges for both users and admins, hindering operational efficiency and customer satisfaction.
 
  
-# Proposed Solution:
+## Proposed Solution:
   1.	This project system excludes the need to maintain paper electricity bills as all the electricity bill records are managed electronically.
   2.	The administrator doesn't have to keep a manual track of the users. The system automatically calculates fines.
   3.	Users don't have to visit the office for bill payment.
@@ -42,7 +42,7 @@ Choose our app for its user-friendly interface, robust security, and customizabl
 # Preview  of the project:
 
 # Requirements
-  # Software Requirements:
+  ## Software Requirements:
     1.	Operating System: Windows 10, macOS, or Linux.
     2.	Java Development Kit (JDK) version 8 or later for development and execution of Java applications.
     3.	MySQL Database Management System for storing and managing billing data.
@@ -50,7 +50,7 @@ Choose our app for its user-friendly interface, robust security, and customizabl
     5.	Swing/AWT libraries for building graphical user interfaces (GUI) for the application.
     6.	JDBC (Java Database Connectivity) driver for connecting Java applications to MySQL database.
     7.	Apache Maven or Gradle for project management and dependency resolution.
-  # Hardware Requirements:
+  ## Hardware Requirements:
     1.	Processor: Intel Core i3 processor or equivalent AMD processor.
     2.	Clock Speed: 1.8GHz or more.
     3.	System Bus: 64 bits
@@ -59,6 +59,6 @@ Choose our app for its user-friendly interface, robust security, and customizabl
     6.	Display: Monitor with a resolution of 1280x800 pixels or higher for comfortable viewing of the application.
     7.	Input Devices: Keyboard and mouse for interacting with the application's GUI.
     8.	Internet Connection: Required for downloading software updates, accessing online resources, and interacting with remote databases (optional).
-## License
+# License
 
 This project is free for non-commercial usage.
